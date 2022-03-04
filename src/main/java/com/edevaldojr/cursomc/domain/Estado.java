@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Estado implements Serializable{
+public class Estado implements Serializable {
     
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
