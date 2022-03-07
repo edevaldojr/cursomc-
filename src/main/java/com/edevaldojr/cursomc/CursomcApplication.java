@@ -20,7 +20,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.expression.spel.CodeFlow.ClinitAdder;
 
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner {
@@ -85,7 +84,7 @@ public class CursomcApplication implements CommandLineRunner {
 		cli1.getEnderecos().addAll(Arrays.asList(e1, e2));
 
 		clienteRepository.saveAll(Arrays.asList(cli1));
-		enderecoRepository.saveAll(Arrays.asList(e1, e1));
+		enderecoRepository.saveAll(Arrays.asList(e1, e2));
 
 
 	}	
